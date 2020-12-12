@@ -1,0 +1,131 @@
+@media only screen and (min-width: 600px) and (max-width: 900px){
+    body>#app{
+        padding: 20px;
+        width: auto;
+        justify-content: stretch;
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (min-width: 901px){
+    body>#app{
+        font-size: 2em;
+    }
+}
+
+body{
+    margin: 0;
+    background: #fffff8;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+#app{
+    display: grid;
+    grid-auto-rows: minmax(1fr, auto);
+    /* grid-template-columns:  */
+    min-height:100vh;
+    height: auto;
+    background: #e4e3e3;
+    color: #000000;
+    justify-content: center;
+    grid-gap: 1em;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+
+#image{
+    margin: 10px;
+    width: 50%;
+}
+
+.holder{
+    width: 100%;
+    height: 100%;
+}
+
+.entry{
+    background: rgba(59, 74, 107, .4);
+    display: flex;
+    gap: 5px;
+}
+
+#city:hover{
+    box-shadow: 2px 4px 5px #444;
+}
+
+#date:hover{
+    box-shadow: 2px 4px 5px #444;
+}
+
+.headline {
+    font-size: 3em;
+}
+
+/*  Basic Styling To Override Default For Basic HTML Elements */
+label{
+    display:block;
+    font-size: 27px;
+}
+
+input{
+    display:block;
+    height: 60px;
+    width: 90%;
+    background:#ffffff;
+    color: #000000;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    border: none;
+}
+
+button{
+    width: 90%;
+    height: 100px;
+    background: #3b4a6b;
+    color: #f0d43a;
+    font-size: 26px;
+    font-family: 'Oswald', sans-serif;
+    border: none;
+    margin: 20px;
+}
+
+button:hover{
+    cursor: pointer;
+    box-shadow: 2px 4px 5px #444;
+}
+
+h1{
+    font-size: 36px;
+}
+
+textarea{
+    background:#ffffff;
+    color: #000000;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+/* Reset style for HTML element on active to have no border*/
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+/* Style for Placeholder Text*/
+::placeholder { /* Firefox, Chrome, Opera */ 
+    color: #000000; 
+    font-family: 'Oswald', sans-serif;
+
+} 
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */ 
+    color: #000000; 
+    font-family: 'Oswald', sans-serif;
+
+} 
+  
+::-ms-input-placeholder { /* Microsoft Edge */ 
+    color: #000000; 
+    font-family: 'Oswald', sans-serif;
+
+}
